@@ -1,0 +1,141 @@
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --grey: #6B7280;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+    --light: #EEE;
+}
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    background-image: linear-gradient(to right, #c7bfbd, #4a2c50);
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 300;   
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#new-task-form {
+    display: flex;
+    
+}
+
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+    width: 350px;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 26.5rem;
+    color: white;
+    font-size: 1.25rem;
+    height: 50px;
+    position: relative;
+    left: 216px;
+}
+
+#new-task-input::placeholder {
+    color: grey;
+}
+
+#new-task-submit {
+    color: yellow;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, grey, grey);
+    -webkit-text-fill-color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 200px;
+}
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.task-list h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: grey;
+    margin-bottom: 1rem;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.task .content {
+    flex: 1 1 0%;
+}
+
+.task .content .text {
+    color: White;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+.task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.task .actions .edit {
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: rgb(62, 162, 238);
+}
+
+.task .actions .delete {
+    color: rgb(231, 139, 100);
+}
